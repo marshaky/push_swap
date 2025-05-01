@@ -6,7 +6,7 @@
 /*   By: marshaky <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 18:01:28 by marshaky          #+#    #+#             */
-/*   Updated: 2025/05/02 02:04:59 by marshaky         ###   ########.fr       */
+/*   Updated: 2025/05/02 02:31:53 by marshaky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 int	check_arg(char *arg)
 {
-	char	**str;
 	int		i;
 	int		j;
+	char	**str;
 
 	str = ft_split(arg, ' ');
-	i = 0;
+	i = -1;
 	while (str[++i])
 	{
 		j = 0;
@@ -105,32 +105,6 @@ int	check_if_sorted(int *arr, int arg_count)
 
 int	val_args(int arg_count, char **argv)
 {
-	// int		i;
-	// int		j;
-	// long	num;
-	// char	**split;
-
-	// i = 0;
-	// while (argv[++i])
-	// {
-	// 	split = ft_split(argv[i], ' ');
-	// 	if (!split)
-	// 		return (-1);
-	// 	j = 0;
-	// 	while (split[j])
-	// 	{
-	// 		num = atoi_long(split[j]);
-	// 		if (num > 2147483647 || num < -2147483648)
-	// 		{
-	// 			ft_free(split);
-	// 			return (-1);
-	// 		}
-	// 		j++;
-	// 	}
-	// 	ft_free(split);
-	// }
-	// return (0);
-
 	long	num;
 
 	if (arg_count == 1)

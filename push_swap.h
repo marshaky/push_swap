@@ -6,7 +6,7 @@
 /*   By: marshaky <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 17:21:37 by marshaky          #+#    #+#             */
-/*   Updated: 2025/05/02 02:05:21 by marshaky         ###   ########.fr       */
+/*   Updated: 2025/05/02 02:14:19 by marshaky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ int		check_duplicates(int *arr, int size);
 int		check_arg(char *arg);
 int		get_split_len(char **str);
 int		check_if_sorted(int *arr, int arg_count);
-// int		val_args(char **argv);
 int	val_args(int arg_count, char **argv);
 int		print_error(void);
 int		find_index(int *arr, int value, int arg_count);
