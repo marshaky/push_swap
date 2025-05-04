@@ -6,7 +6,7 @@
 /*   By: marshaky <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 18:01:28 by marshaky          #+#    #+#             */
-/*   Updated: 2025/05/02 02:31:53 by marshaky         ###   ########.fr       */
+/*   Updated: 2025/05/05 03:05:49 by marshaky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	check_arg(char *arg)
 	int		j;
 	char	**str;
 
+	if (!arg || !*arg)
+		return (-1);
 	str = ft_split(arg, ' ');
 	i = -1;
 	while (str[++i])
@@ -36,8 +38,6 @@ int	check_arg(char *arg)
 		}
 	}
 	ft_free(str);
-	if (i == 0)
-		exit(0);
 	return (i);
 }
 
@@ -56,7 +56,7 @@ int	args_count(char **argv)
 		if (curr_arg_count == -1)
 		{
 			print_error();
-			exit(1);
+			return(-1);
 		}
 		else
 			arg_count += curr_arg_count;
