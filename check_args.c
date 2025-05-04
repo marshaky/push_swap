@@ -6,7 +6,7 @@
 /*   By: marshaky <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 18:01:28 by marshaky          #+#    #+#             */
-/*   Updated: 2025/05/05 03:05:49 by marshaky         ###   ########.fr       */
+/*   Updated: 2025/05/05 03:10:33 by marshaky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ int	args_count(char **argv)
 		if (curr_arg_count == -1)
 		{
 			print_error();
-			return(-1);
+			return (-1);
 		}
 		else
 			arg_count += curr_arg_count;
