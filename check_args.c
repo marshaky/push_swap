@@ -6,7 +6,7 @@
 /*   By: marshaky <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 18:01:28 by marshaky          #+#    #+#             */
-/*   Updated: 2025/05/05 03:10:33 by marshaky         ###   ########.fr       */
+/*   Updated: 2025/05/02 02:31:53 by marshaky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	check_arg(char *arg)
 	int		j;
 	char	**str;
 
-	if (!arg || !*arg)
+	if (!arg[0])
 		return (-1);
 	str = ft_split(arg, ' ');
 	i = -1;
